@@ -1,8 +1,8 @@
 import './globals.css'
 import { Inter } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/react'
-import Header from './Header'
-import Footer from './Footer'
+import Header from '@/ui/Header'
+import Footer from '@/ui/Footer'
 
 const inter = Inter({ subsets: ['latin'] })
 
