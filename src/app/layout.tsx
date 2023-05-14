@@ -21,7 +21,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <div className='w-full md:max-w-3xl lg:max-w-4xl min-h-screen mx-auto flex flex-col'>
           <Header />
-          <main className='min-h-screen p-8 md:px-4 md:py-12 flex-1 flex flex-col'>
+          <main className='min-h-max p-8 md:px-4 md:py-12 flex-1 flex flex-col'>
             {children}
           </main>
           <Footer />
