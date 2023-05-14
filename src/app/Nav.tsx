@@ -1,14 +1,14 @@
-import Link from 'next/link'
+import ActiveLink from './ActiveLink'
 
 export default function Nav() {
   return (
     <nav className='flex flex-row gap-10 justify-between items-center'>
-      <Link href='/about' className='text-sm hover:text-kb-green-light md:text-base font-mono transition'>
+      <ActiveLink href='/about'>
         about
-      </Link>
-      <Link href='/blog' className='text-sm hover:text-kb-green-light md:text-base font-mono transition'>
+      </ActiveLink>
+      <ActiveLink href='/blog'>
         blog
-      </Link>
+      </ActiveLink>
     </nav>
   )
 }
