@@ -1,11 +1,11 @@
-import './globals.css'
 import { inter, ibm_plex_mono, ibm_plex_sans } from './fonts'
 import { Analytics } from '@vercel/analytics/react'
 import Header from '@/ui/Header'
 import Footer from '@/ui/Footer'
+import './globals.css'
 
 export const metadata = {
-  title: 'kalynbeach.com',
+  title: 'kalynbeach',
   description: 'Kalyn Beach',
 }
 
@@ -23,8 +23,8 @@ export default function RootLayout({
             {children}
           </main>
           <Footer />
-          <Analytics />
         </div>
+        <Analytics />
       </body>
     </html>
   )
