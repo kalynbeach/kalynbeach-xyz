@@ -1,10 +1,8 @@
 import './globals.css'
-import { Inter } from 'next/font/google'
+import { inter, ibm_plex_mono, ibm_plex_sans } from './fonts'
 import { Analytics } from '@vercel/analytics/react'
 import Header from '@/ui/Header'
 import Footer from '@/ui/Footer'
-
-const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
   title: 'kalynbeach.com',
@@ -18,7 +16,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={`${inter.variable} ${ibm_plex_sans.variable} ${ibm_plex_mono.variable}`}>
         <div className='w-full md:max-w-3xl lg:max-w-4xl min-h-screen mx-auto flex flex-col'>
           <Header />
           <main className='min-h-max p-8 md:px-4 md:py-12 flex-1 flex flex-col'>

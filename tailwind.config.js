@@ -22,6 +22,11 @@ module.exports = {
           900: 'hsl(20, 11%, 5%)' // '#0F0D0C'
         },
       },
+      fontFamily: {
+        sans: ['var(--font-ibm-plex-sans)'],
+        mono: ['var(--font-ibm-plex-mono)'],
+        heading: ['var(--font-inter)'],
+      }
     },
   },
   plugins: [],
