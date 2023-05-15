@@ -16,7 +16,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} ${ibm_plex_sans.variable} ${ibm_plex_mono.variable}`}>
+      <body className={`${inter.variable} ${ibm_plex_sans.variable} ${ibm_plex_mono.variable} bg-night-900`}>
         <div className='w-full md:max-w-3xl lg:max-w-4xl min-h-screen mx-auto flex flex-col'>
           <Header />
           <main className='min-h-max p-8 md:px-4 md:py-12 flex-1 flex flex-col'>
