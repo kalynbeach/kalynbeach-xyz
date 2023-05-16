@@ -1,6 +1,11 @@
 import { projects, jobs } from './content'
 import Card from '@/ui/Card'
 
+export const metadata = {
+  title: 'code | kalynbeach',
+  description: 'Kalyn Beach Code',
+}
+
 export default function Code() {
   return (
     <div>
