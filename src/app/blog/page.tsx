@@ -9,6 +9,7 @@ export default function Blog() {
   return (
     <div>
       <PageHeading emoji='💭' name='blog' />
+      <p className='my-4 text-xl'>🚧 🚧 🚧</p>
     </div>
   )
 }

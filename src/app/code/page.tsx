@@ -13,9 +13,11 @@ export default function Code() {
     <div>
       <PageHeading emoji='💻' name='code' />
 
+      <p className='mt-4 mb-8 text-xl'>🚧 🚧 🚧</p>
+
       {/* Projects */}
       <section className='mb-8'>
-        <h2 className='mb-4 text-2xl font-heading tracking-wide'>Projects</h2>
+        <h2 className='mb-6 text-2xl font-mono font-bold tracking-wide'>Projects</h2>
         <div className='grid lg:grid-cols-3 gap-4'>
           {
             projects.map((project, i) => <Card key={i} {...project} />)
@@ -25,8 +27,7 @@ export default function Code() {
       
       {/* Work (Experience) */}
       <section className='mb-8'>
-        <h2 className='mb-4 text-2xl font-heading tracking-wide'>Work</h2>
-        <p className='my-4 text-xl text-center'>🚧 🚧 🚧</p>
+        <h2 className='mb-6 text-2xl font-mono font-bold tracking-wide'>Work</h2>
         <div className='flex flex-col gap-4'>
           {
             jobs.map((job, i) => (
@@ -34,7 +35,7 @@ export default function Code() {
             ))
           }
         </div>
-        <p className='my-4 text-xl text-center'>🚧 🚧 🚧</p>
+        <p className='my-8 text-xl'>🚧 🚧 🚧</p>
       </section>
 
       {/* Links */}

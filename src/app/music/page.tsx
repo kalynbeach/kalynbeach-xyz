@@ -9,6 +9,7 @@ export default function Music() {
   return (
     <div>
       <PageHeading emoji='🎵' name='music' />
+      <p className='my-4 text-xl'>🚧 🚧 🚧</p>
     </div>
   )
 }

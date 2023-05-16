@@ -9,6 +9,7 @@ export default function About() {
   return (
     <div>
       <PageHeading emoji='🪬' name='about' />
+      <p className='my-4 text-xl'>🚧 🚧 🚧</p>
     </div>
   )
 }

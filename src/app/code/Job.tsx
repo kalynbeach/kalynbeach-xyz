@@ -1,5 +1,4 @@
 type JobProps = {
-  key: number,
   title: string,
   company: string,
   location: string,
@@ -9,7 +8,6 @@ type JobProps = {
 }
 
 export default function Job({
-  key,
   title,
   company,
   startDate,
@@ -18,7 +16,7 @@ export default function Job({
   description
 }: JobProps) {
   return (
-    <div key={key} className='p-4 flex flex-col justify-between gap-3 md:gap-2 border border-neutral-900 rounded-lg'>
+    <div className='p-4 flex flex-col justify-between gap-3 md:gap-2 border border-neutral-900 rounded-lg'>
       {/* Job Heading */}
       <div className='flex flex-col md:flex-row justify-between md:items-center gap-1 md:gap-0'>
         <h3 className='text-lg md:text-xl font-mono'>{title}</h3>
