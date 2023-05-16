@@ -1,3 +1,5 @@
+import PageHeading from '@/ui/PageHeading'
+
 export const metadata = {
   title: 'about | kalynbeach',
   description: 'About Kalyn Beach',
@@ -6,7 +8,7 @@ export const metadata = {
 export default function About() {
   return (
     <div>
-      <h1 className='text-3xl mb-8'>🪬</h1>
+      <PageHeading emoji='🪬' name='about' />
     </div>
   )
 }

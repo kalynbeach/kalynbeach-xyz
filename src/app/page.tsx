@@ -1,14 +1,19 @@
+import PageHeading from '@/ui/PageHeading'
+
 export default function Home() {
   return (
     <div className='flex flex-col justify-between'>
-
-      <h1 className='text-3xl mb-8'>🌐</h1>
-
+      <PageHeading emoji='🌐' name='' />
       <section className='text-sm font-mono'>
-        <p>Artist & Engineer</p>
-        <p>Los Angeles, CA</p>
+        <ul className='pl-4 list-disc'>
+          <li>
+            <p>Artist & Engineer</p>
+          </li>
+          <li>
+            <p>Los Angeles, CA</p>
+          </li>
+        </ul>
       </section>
-
     </div>
   )
 }

@@ -18,20 +18,44 @@ export const projects = [
 
 export const jobs = [
   {
+    title: 'Contract Web Developer',
     company: 'CPR',
     location: 'Orange, CA',
-    title: 'Contract Web Developer',
     startDate: 'April 2015',
     endDate: 'June 2015',
-    description: 'Freelance web development work'
+    description: '[TODO]'
   },
   {
+    title: 'Software Engineer Intern',
     company: 'Demand Media',
     location: 'Santa Monica, CA',
-    title: 'Software Engineer Intern',
     startDate: 'June 2015',
     endDate: 'September 2015',
     description: 'Interned on the eHow.com engineering team. Implemented frontend features and fixes with HTML, CSS, and JavaScript (with jQuery). First experiences with large codebases and sites with millions of visitors.'
+  },
+  {
+    title: 'Associate Software Engineer',
+    company: 'Leaf Group (f.k.a. Demand Media)',
+    location: 'Santa Monica, CA',
+    startDate: 'September 2015',
+    endDate: 'September 2016',
+    description: '[TODO]'
+  },
+  {
+    title: 'Software Engineer',
+    company: 'Leaf Group',
+    location: 'Los Angeles, CA',
+    startDate: 'September 2016',
+    endDate: 'July 2022',
+    description: '[TODO]'
+  },
+  {
+    title: 'Senior Software Engineer',
+    company: 'Leaf Group',
+    location: 'Los Angeles, CA',
+    startDate: 'July 2022',
+    endDate: 'Present',
+    description: '[TODO]'
   },
 ]
 
