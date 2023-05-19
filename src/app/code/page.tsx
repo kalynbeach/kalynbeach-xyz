@@ -28,7 +28,7 @@ export default function Code() {
       {/* Work (Experience) */}
       <section className='mb-8'>
         <h2 className='mb-6 text-2xl font-mono font-bold tracking-wide'>Work</h2>
-        <div className='flex flex-col gap-4'>
+        <div className='flex flex-col gap-6'>
           {
             jobs.map((job, i) => (
               <Job key={i} {...job} />

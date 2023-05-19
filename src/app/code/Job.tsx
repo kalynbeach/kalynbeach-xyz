@@ -16,19 +16,23 @@ export default function Job({
   description
 }: JobProps) {
   return (
-    <div className='p-4 flex flex-col justify-between gap-3 md:gap-2 border border-neutral-900 rounded-lg'>
-      {/* Job Heading */}
-      <div className='flex flex-col md:flex-row justify-between md:items-center gap-1 md:gap-0'>
-        <h3 className='text-lg md:text-xl font-mono'>{title}</h3>
-        <h4 className='text-lg md:text-xl font-sans font-bold tracking-wide'>{company}</h4>
+    <details className='p-4 border border-neutral-900 rounded-lg transition hover:dark:bg-neutral-900/30 hover:dark:border-neutral-800 open:dark:bg-neutral-900/30 open:dark:border-neutral-800'>
+      <summary className='list-none cursor-pointer'>
+        {/* Job Heading */}
+        <div className='mb-2 flex flex-col md:flex-row justify-between md:items-center gap-1 md:gap-0'>
+          <h3 className='text-lg md:text-xl font-mono'>{title}</h3>
+          <h4 className='text-lg md:text-xl font-sans font-bold tracking-normal'>{company}</h4>
+        </div>
+        {/* Job Info */}
+        <div className='flex flex-col md:flex-row justify-between md:items-center gap-1 md:gap-0'>
+          <span className='text-sm font-mono'>{startDate} - {endDate}</span>
+          <span className='text-sm font-mono'>{location}</span>
+        </div>
+      </summary>
+      <div className='mt-4'>
+        {/* Job Description */}
+        <p className='text-sm font-mono'>{description}</p>
       </div>
-      {/* Job Info */}
-      <div className='flex flex-col md:flex-row justify-between md:items-center gap-1 md:gap-0'>
-        <span className='text-sm font-mono'>{startDate} - {endDate}</span>
-        <span className='text-sm font-mono'>{location}</span>
-      </div>
-      {/* Job Description */}
-      <p className='md:mt-3 text-sm font-mono'>{description}</p>
-    </div>
+    </details>
   )
 }
