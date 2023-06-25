@@ -1,6 +1,6 @@
 import ActiveLink from './ActiveLink'
 
-export default function Nav() {
+export default function DesktopNav() {
   return (
     <nav className='flex flex-row gap-10 justify-between items-center'>
       <ActiveLink href='/about'>

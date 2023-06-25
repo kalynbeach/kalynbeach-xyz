@@ -1,5 +1,6 @@
 import Link from 'next/link'
-import Nav from './Nav'
+import DesktopNav from './DesktopNav'
+import MobileNav from './MobileNav'
 
 export default function Header() {
   return (
@@ -7,7 +8,14 @@ export default function Header() {
       <Link href={'/'} className='font-mono md:text-lg text-white'>
         kalynbeach
       </Link>
-      <Nav />
+      {/* Mobile Nav */}
+      <div className='md:hidden'>
+        <MobileNav />
+      </div>
+      {/* Desktop Nav */}
+      <div className='hidden md:block'>
+        <DesktopNav />
+      </div>
     </header>
   )
 }
