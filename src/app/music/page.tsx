@@ -1,4 +1,5 @@
 import PageHeading from '@/ui/PageHeading'
+import UnderConstruction from '@/ui/UnderConstruction'
 
 export const metadata = {
   title: 'music | kalynbeach',
@@ -9,7 +10,7 @@ export default function Music() {
   return (
     <div>
       <PageHeading emoji='🎵' name='music' />
-      <p className='my-4 text-xl'>🚧 🚧 🚧</p>
+      <UnderConstruction />
     </div>
   )
 }

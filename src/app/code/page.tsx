@@ -1,4 +1,5 @@
 import { projects, jobs } from './content'
+import UnderConstruction from '@/ui/UnderConstruction'
 import PageHeading from '@/ui/PageHeading'
 import Card from '@/ui/Card'
 import Job from './Job'
@@ -13,10 +14,10 @@ export default function Code() {
     <div>
       <PageHeading emoji='💻' name='code' />
 
-      <p className='mt-4 mb-8 text-xl'>🚧 🚧 🚧</p>
+      <UnderConstruction />
 
       {/* Projects */}
-      <section className='mb-8'>
+      <section className='mb-24'>
         <h2 className='mb-6 text-2xl font-mono font-bold tracking-wide'>Projects</h2>
         <div className='grid lg:grid-cols-3 gap-4'>
           {
@@ -26,7 +27,7 @@ export default function Code() {
       </section>
       
       {/* Work (Experience) */}
-      <section className='mb-8'>
+      <section className='mb-24'>
         <h2 className='mb-6 text-2xl font-mono font-bold tracking-wide'>Work</h2>
         <div className='flex flex-col gap-6'>
           {
@@ -35,7 +36,7 @@ export default function Code() {
             ))
           }
         </div>
-        <p className='my-8 text-xl'>🚧 🚧 🚧</p>
+        <UnderConstruction />
       </section>
 
       {/* Links */}

@@ -9,7 +9,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-				'kb-green-light': 'hsl(114, 97%, 46%)', // '#1AE803
+				'kb-green-light': 'hsl(114, 97%, 46%)', // '#1AE803'
 				'kb-green-dark': 'hsl(114, 99%, 32%)', // '#11A101'
 				'night': {
           700: 'hsl(220, 21%, 8%)', // '#11141A'
