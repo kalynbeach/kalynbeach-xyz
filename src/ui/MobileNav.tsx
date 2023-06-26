@@ -34,8 +34,13 @@ export default function MobileNav() {
           )
         }
       </button>
-      <div className={`${isOpen ? 'h-64' : 'h-0'} absolute left-0 top-32 w-full bg-night-900 transition-all ease-out duration-200 transform`}>
-        <div className={`${!isOpen && 'hidden'} h-full p-8 flex flex-col justify-evenly gap-8 text-xl text-right border-t border-b border-neutral-900`} role='menu' aria-orientation='vertical' aria-labelledby='options-menu'>
+      <div className={`${isOpen ? 'h-64' : 'h-0'} absolute left-0 top-32 w-full bg-night-900 transition-all ease-out duration-300 transform`}>
+        <div 
+          className={`${!isOpen ? 'hidden' : ''} h-full p-8 flex flex-col justify-evenly gap-8 text-xl text-right border-t border-b border-neutral-900 z-50`}
+          role='menu'
+          aria-orientation='vertical'
+          aria-labelledby='options-menu'
+        >
           <ActiveLink href='/about' onClick={() => setIsOpen(!isOpen)}>
             about
           </ActiveLink>
