@@ -1,10 +1,19 @@
 'use client'
 
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
+import { usePathname } from 'next/navigation'
 import ActiveLink from './ActiveLink'
 
 export default function MobileNav() {
   const [isOpen, setIsOpen] = useState(false)
+  const pathName = usePathname()
+  
+  // Close mobile nav menu when user navigates home
+  useEffect(() => {
+    if (pathName === '/') {
+      setIsOpen(false)
+    }
+  }, [pathName])
 
   return (
     <nav className='flex flex-row gap-10 justify-between items-center'>
