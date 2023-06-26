@@ -15,9 +15,13 @@ export default function MobileNav() {
     }
   }, [pathName])
 
+  const toggleMenu = () => {
+    setIsOpen(!isOpen)
+  }
+
   return (
     <nav className='flex flex-row gap-10 justify-between items-center'>
-      <button onClick={() => setIsOpen(!isOpen)}>
+      <button onClick={toggleMenu}>
         {
           isOpen ? (
             <svg width='32' height='32' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
@@ -30,18 +34,16 @@ export default function MobileNav() {
           )
         }
       </button>
-      {
-        isOpen && (
-          <div className='absolute left-0 top-32 w-full h-fit px-8 py-16 flex flex-col items-end gap-8 text-xl bg-night-900'>
-            <ActiveLink href='/about' onClick={() => setIsOpen(!isOpen)}>
-              about
-            </ActiveLink>
-            <ActiveLink href='/blog' onClick={() => setIsOpen(!isOpen)}>
-              blog
-            </ActiveLink>
-          </div>
-        )
-      }
+      <div className={`${isOpen ? 'h-64' : 'h-0'} absolute left-0 top-32 w-full bg-night-900 transition-all ease-out duration-200 transform`}>
+        <div className={`${!isOpen && 'hidden'} h-full p-8 flex flex-col justify-evenly gap-8 text-xl text-right border-t border-b border-neutral-900`} role='menu' aria-orientation='vertical' aria-labelledby='options-menu'>
+          <ActiveLink href='/about' onClick={() => setIsOpen(!isOpen)}>
+            about
+          </ActiveLink>
+          <ActiveLink href='/blog' onClick={() => setIsOpen(!isOpen)}>
+            blog
+          </ActiveLink>
+        </div>
+      </div>
     </nav>
   )
 }
