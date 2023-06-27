@@ -15,7 +15,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang='en' className={`${inter.variable} ${ibm_plex_mono.variable} ${ibm_plex_sans.variable} bg-night-900`}>
+    <html lang='en' className={`${inter.variable} ${ibm_plex_mono.variable} ${ibm_plex_sans.variable} bg-white dark:bg-night-900`}>
       <body>
         <div className='w-full md:max-w-3xl lg:max-w-4xl min-h-screen mx-auto flex flex-col'>
           <Header />

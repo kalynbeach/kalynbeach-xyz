@@ -18,7 +18,7 @@ export default function Code() {
 
       {/* Projects */}
       <section className='mb-24'>
-        <h2 className='mb-6 text-2xl font-mono font-bold tracking-wide'>Projects</h2>
+        <h2 className='mb-6 text-2xl font-mono font-bold text-night-900 dark:text-white tracking-wide'>Projects</h2>
         <div className='grid lg:grid-cols-3 gap-4'>
           {
             projects.map((project, i) => <Card key={i} {...project} />)
@@ -28,7 +28,7 @@ export default function Code() {
       
       {/* Work (Experience) */}
       <section className='mb-24'>
-        <h2 className='mb-6 text-2xl font-mono font-bold tracking-wide'>Work</h2>
+        <h2 className='mb-6 text-2xl font-mono font-bold text-night-900 dark:text-white tracking-wide'>Work</h2>
         <div className='flex flex-col gap-6'>
           {
             jobs.map((job, i) => (
