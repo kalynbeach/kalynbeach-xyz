@@ -12,8 +12,8 @@ export default function ActiveLink({
 }: PropsWithChildren<ActiveLinkProps>) {
   const pathName = usePathname()
   const isActive = pathName === props.href
-  const baseClassName = 'text-lg md:text-sm hover:text-kb-green-light md:text-base font-mono transition'
-  const activeClassName = `${baseClassName} text-kb-green-light`
+  const baseClassName = 'text-lg md:text-sm font-mono transition hover:text-kb-green-dark dark:hover:text-kb-green-light'
+  const activeClassName = `${baseClassName} text-kb-green-dark dark:text-kb-green-light`
 
   return (
     <Link
