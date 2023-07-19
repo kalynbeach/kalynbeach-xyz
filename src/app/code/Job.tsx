@@ -21,7 +21,7 @@ export default function Job({
         {/* Job Heading */}
         <div className='mb-2 flex flex-col md:flex-row justify-between md:items-center gap-1 md:gap-0'>
           <h3 className='text-lg md:text-xl font-mono'>{title}</h3>
-          <h4 className='text-lg md:text-xl font-sans font-bold tracking-wide'>{company}</h4>
+          <h4 className='text-lg md:text-xl font-sans font-bold tracking-wider'>{company}</h4>
         </div>
         {/* Job Info */}
         <div className='flex flex-col md:flex-row justify-between md:items-center gap-1 md:gap-0'>
@@ -29,9 +29,9 @@ export default function Job({
           <span className='text-sm font-mono text-neutral-800 dark:text-neutral-100 opacity-50'>{location}</span>
         </div>
       </summary>
-      <div className='mt-4'>
+      <div className='mt-4 p-4 bg-neutral-900 rounded-lg'>
         {/* Job Description */}
-        <p className='text-sm font-mono'>{description}</p>
+        <p className='text-sm font-mono leading-6'>{description}</p>
       </div>
     </details>
   )

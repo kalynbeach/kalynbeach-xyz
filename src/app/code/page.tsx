@@ -14,11 +14,9 @@ export default function Code() {
     <div>
       <PageHeading emoji='💻' name='code' />
 
-      <UnderConstruction />
-
       {/* Projects */}
-      <section className='mb-24'>
-        <h2 className='mb-6 text-2xl font-mono font-bold text-night-900 dark:text-white tracking-wide'>Projects</h2>
+      <section className='mb-16'>
+        <h2 className='mb-6 text-2xl font-mono text-night-900 dark:text-white tracking-wider'>Projects</h2>
         <div className='grid lg:grid-cols-3 gap-4'>
           {
             projects.map((project, i) => <Card key={i} {...project} />)
@@ -27,8 +25,8 @@ export default function Code() {
       </section>
       
       {/* Work (Experience) */}
-      <section className='mb-24'>
-        <h2 className='mb-6 text-2xl font-mono font-bold text-night-900 dark:text-white tracking-wide'>Work</h2>
+      <section className='mb-16'>
+        <h2 className='mb-6 text-2xl font-mono text-night-900 dark:text-white tracking-wider'>Work</h2>
         <div className='flex flex-col gap-6'>
           {
             jobs.map((job, i) => (
@@ -36,9 +34,9 @@ export default function Code() {
             ))
           }
         </div>
-        <UnderConstruction />
       </section>
 
+      <UnderConstruction />
       {/* Links */}
       {/* - Resume (PDF) */}
       {/* <section className='mb-8'>
