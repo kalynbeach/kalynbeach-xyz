@@ -9,7 +9,7 @@ export default function PageHeading({ emoji, name }: PageHeadingProps) {
       <span className=''>
         {emoji}
       </span>
-      <h1 className=''>
+      <h1 className='tracking-wide'>
         {name}
       </h1>
     </div>

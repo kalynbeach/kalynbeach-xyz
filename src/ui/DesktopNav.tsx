@@ -6,9 +6,15 @@ export default function DesktopNav() {
       <ActiveLink href='/about'>
         about
       </ActiveLink>
-      <ActiveLink href='/blog'>
+      {/* <ActiveLink href='/blog'>
         blog
-      </ActiveLink>
+      </ActiveLink> */}
+      {/* <ActiveLink href='/code'>
+        code
+      </ActiveLink> */}
+      {/* <ActiveLink href='/music'>
+        music
+      </ActiveLink> */}
     </nav>
   )
 }

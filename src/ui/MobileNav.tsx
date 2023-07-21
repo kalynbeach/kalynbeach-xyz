@@ -44,9 +44,15 @@ export default function MobileNav() {
           <ActiveLink href='/about' onClick={() => setIsOpen(!isOpen)}>
             about
           </ActiveLink>
-          <ActiveLink href='/blog' onClick={() => setIsOpen(!isOpen)}>
+          {/* <ActiveLink href='/blog' onClick={() => setIsOpen(!isOpen)}>
             blog
-          </ActiveLink>
+          </ActiveLink> */}
+          {/* <ActiveLink href='/code'>
+            code
+          </ActiveLink> */}
+          {/* <ActiveLink href='/music'>
+            music
+          </ActiveLink> */}
         </div>
       </div>
     </nav>
