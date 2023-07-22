@@ -1,19 +1,9 @@
 'use server'
 
-import { setVerifiedCookie } from '@/lib/verification'
+import { verifyPassword } from '@/lib/verification'
 
-export async function verifyPassword(data: FormData) {
-
-  // Handle password from form input
-  const password = data.get('password')
-
-  if (password === process.env.MUSIC_PAGE_PASSWORD) {
-    setVerifiedCookie()
-    console.log(`[verifyPassword] Verified!`)
-    return true
-  } else {
-    console.log(`[verifyPassword] Not verified.`)
-    // TODO: Handle incorrect password
-    return false
-  }
+export async function handleEnterFormInput(data: FormData) {
+  const password = data.get('password') as string
+  const isVerified: boolean = verifyPassword(password)
+  return isVerified
 }

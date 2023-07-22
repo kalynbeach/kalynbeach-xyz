@@ -1,5 +1,6 @@
 import EnterForm from './EnterForm'
-import UnderConstruction from '@/ui/UnderConstruction'
+import { handleEnterFormInput } from './actions'
+
 
 export const metadata = {
   title: 'enter - music | kalynbeach',
@@ -10,7 +11,9 @@ export default function Enter() {
   return (
     <div className=''>
       {/* Three.js canvas and animation behind EnterForm */}
-      <EnterForm />
+      <EnterForm
+        serverAction={handleEnterFormInput}  
+      />
     </div>
   )
 }
