@@ -1,4 +1,4 @@
-import EnterModal from './EnterModal'
+import EnterForm from './EnterForm'
 import UnderConstruction from '@/ui/UnderConstruction'
 
 export const metadata = {
@@ -9,9 +9,8 @@ export const metadata = {
 export default function Enter() {
   return (
     <div className=''>
-      <UnderConstruction />
-      {/* Three.js canvas and animation behind EnterModal */}
-      <EnterModal />
+      {/* Three.js canvas and animation behind EnterForm */}
+      <EnterForm />
     </div>
   )
 }
