@@ -1,4 +1,4 @@
-import EnterModal from './EnterModal'
+import EnterModal from './enter/EnterModal'
 
 export const metadata = {
   title: 'music | kalynbeach',
