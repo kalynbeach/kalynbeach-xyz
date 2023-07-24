@@ -39,10 +39,10 @@ export function setVerifiedCookie(
 export function verifyPassword(password: string) {
   if (password === process.env.MUSIC_PAGE_PASSWORD) {
     setVerifiedCookie()
-    console.log(`[handleEnterFormInput] Verified!`)
+    console.log(`[verifyPassword] Verified!`)
     return true
   } else {
-    console.log(`[handleEnterFormInput] Not verified.`)
+    console.log(`[verifyPassword] Not verified.`)
     // TODO: Handle incorrect password
     return false
   }
