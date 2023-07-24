@@ -2,12 +2,12 @@ import type { RequestCookie } from 'next/dist/compiled/@edge-runtime/cookies'
 import { NextRequest, NextResponse } from 'next/server'
 import { cookies } from 'next/headers'
 
-const cookieName = 'verified'
-const cookieValue = 'true'
+const cookieName = process.env.MUSIC_PAGE_COOKIE_NAME
+const cookieValue = process.env.MUSIC_PAGE_COOKIE_VALUE
 
 export function checkVerifiedCookie(
   request?: NextRequest,
-  name: string = cookieName
+  name: string = cookieName!
 ) {
   let cookie: RequestCookie | undefined
 
@@ -26,8 +26,8 @@ export function checkVerifiedCookie(
 
 export function setVerifiedCookie(
   response?: NextResponse,
-  name: string = cookieName,
-  value: string = cookieValue
+  name: string = cookieName!,
+  value: string = cookieValue!
 ) {
   if (response) {
     response.cookies.set({ name, value, httpOnly: true, path: '/' })
