@@ -20,8 +20,8 @@ export default function RootLayout({
   return (
     <html lang='en' className={`${inter.variable} ${ibm_plex_mono.variable} ${ibm_plex_sans.variable} bg-white dark:bg-night-900`}>
       <body>
-        <div className='w-full md:max-w-3xl lg:max-w-4xl min-h-screen mx-auto flex flex-col'>
-          <main className='min-h-max p-8 md:px-4 md:py-12 flex-1 flex flex-col justify-center items-center'>
+        <div className='w-full min-h-screen flex flex-col'>
+          <main className='min-h-max flex-1 flex flex-col justify-center items-center'>
             { isVerified ? music : enter }
           </main>
         </div>
