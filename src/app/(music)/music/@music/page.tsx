@@ -1,4 +1,3 @@
-import EnterModal from './enter/EnterModal'
 
 export const metadata = {
   title: 'music | kalynbeach',
@@ -8,7 +7,8 @@ export const metadata = {
 export default function Music() {
   return (
     <div className=''>
-      <EnterModal />
+      <h1 className='font-mono text-3xl'>🚧 🔊 🚧</h1>
+      {/* TODO: add WavePlayerStack */}
     </div>
   )
 }
