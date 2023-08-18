@@ -7,7 +7,8 @@ export const metadata = {
 export default function Music() {
   return (
     <div className=''>
-      <h1 className='font-mono'>Kalyn Beach Music</h1>
+      <h1 className='font-mono text-3xl'>🚧 🔊 🚧</h1>
+      {/* TODO: add WavePlayerStack */}
     </div>
   )
 }
