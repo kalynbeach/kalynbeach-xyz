@@ -5,6 +5,11 @@ export const projects = [
     href: 'https://github.com/kalynbeach/kalynbeach-com'
   },
   {
+    title: 'wave-player',
+    description: '🎵 A music player',
+    href: 'https://github.com/kalynbeach/wave-player'
+  },
+  {
     title: 'wave-visions',
     description: '🔊 Audio visualization experiments',
     href: 'https://github.com/kalynbeach/wave-visions'
@@ -13,6 +18,11 @@ export const projects = [
     title: 'wave-dex',
     description: '🗂️ Music project and library indexer',
     href: 'https://github.com/kalynbeach/wave-dex'
+  },
+  {
+    title: 'ai-sdk-experiments',
+    description: '🤖 AI experiments & learning',
+    href: 'https://github.com/kalynbeach/ai-sdk-experiments'
   }
 ]
 
