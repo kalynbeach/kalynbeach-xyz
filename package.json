@@ -1,6 +1,6 @@
 {
   "name": "kalynbeach-com",
-  "version": "0.2.1",
+  "version": "0.3.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -12,6 +12,7 @@
     "test:watch": "jest --watch"
   },
   "dependencies": {
+    "@kalynbeach/wave-player": "^1.0.7",
     "@react-three/drei": "^9.80.5",
     "@react-three/fiber": "^8.13.7",
     "@types/node": "20.5.3",
