@@ -1,8 +1,8 @@
 export const projects = [
   {
-    title: 'kalynbeach-com',
+    title: 'kalynbeach-xyz',
     description: '🌐 This site',
-    href: 'https://github.com/kalynbeach/kalynbeach-com'
+    href: 'https://github.com/kalynbeach/kalynbeach-xyz'
   },
   {
     title: 'wave-player',

@@ -1,5 +1,7 @@
-# kalynbeach-com
+# kalynbeach-xyz
 
-Kalyn Beach's website. A work in progress.
+Kalyn Beach's website.
 
-Based on prior Astro version: [kalynbeach-com-astro](https://github.com/kalynbeach/kalynbeach-com-astro)
+A work in progress.
+
+[kalynbeach.xyz](https://kalynbeach.xyz/)
