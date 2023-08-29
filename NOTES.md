@@ -11,7 +11,7 @@
   - `ui` components
     - `Header`
       - `MobileNav`
-        * `toggleMenu` functionality
+        - `toggleMenu` functionality
   - `music` route (slots & components)
     - `@enter`
       - `actions`
