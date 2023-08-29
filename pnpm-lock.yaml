@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   '@kalynbeach/wave-player':
-    specifier: ^1.0.7
-    version: 1.0.7(react-dom@18.2.0)(react@18.2.0)
+    specifier: ^1.0.8
+    version: 1.0.8(react-dom@18.2.0)(react@18.2.0)
   '@react-three/drei':
     specifier: ^9.80.5
     version: 9.80.5(@react-three/fiber@8.13.7)(@types/three@0.155.1)(react-dom@18.2.0)(react@18.2.0)(three@0.155.0)
@@ -781,8 +781,8 @@ packages:
       '@jridgewell/resolve-uri': 3.1.0
       '@jridgewell/sourcemap-codec': 1.4.14
 
-  /@kalynbeach/wave-player@1.0.7(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-jqKoRY+wG7XemunBwsdksn/KVgl5fHJUwY6ofoa9ZawtYmdOirgPpbfacCDJZSMMke5sPa1HcVFg5yCfre8ToA==, tarball: https://npm.pkg.github.com/download/@kalynbeach/wave-player/1.0.7/7fcd8c900f9fbf216f1a88df8f2e0beb148b9790}
+  /@kalynbeach/wave-player@1.0.8(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-7EEdpjfy2MUnbrQgWeO+IdGIDkIjJCnjLLLLTAg5HZKL8HEMNqauwsBlI9l2exV9wYQ1RCW954C/aOwMM5wulQ==, tarball: https://npm.pkg.github.com/download/@kalynbeach/wave-player/1.0.8/02aec77a7c31eec74d9319822564c010e2fd85f5}
     peerDependencies:
       react: ^18.2.0
       react-dom: ^18.2.0

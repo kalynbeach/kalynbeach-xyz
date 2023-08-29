@@ -5,7 +5,7 @@ module.exports = {
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
     './src/ui/**/*.{js,ts,jsx,tsx,mdx}',
-    // A hack to get the @kalynbeach/wave-player styles to work - need to update style exports in the package
+    // A hack to get the @kalynbeach/wave-player styles to work
     './node_modules/@kalynbeach/wave-player/**/*.{js,ts,jsx,tsx,mdx}'
   ],
   theme: {
