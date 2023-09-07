@@ -16,7 +16,7 @@ export default function Job({
   description
 }: JobProps) {
   return (
-    <details className='p-4 border border-neutral-200 hover:border-neutral-300 dark:border-neutral-900 rounded-lg transition hover:dark:bg-neutral-900/30 hover:dark:border-neutral-800 open:dark:bg-neutral-900/30 open:dark:border-neutral-800'>
+    <details className='p-4 border border-neutral-200 hover:border-neutral-300 dark:border-neutral-900 transition hover:dark:bg-neutral-900/30 hover:dark:border-neutral-800 open:dark:bg-neutral-900/30 open:dark:border-neutral-800'>
       <summary className='list-none cursor-pointer'>
         {/* Job Heading */}
         <div className='mb-2 flex flex-col md:flex-row justify-between md:items-center gap-1 md:gap-0'>
@@ -29,7 +29,7 @@ export default function Job({
           <span className='text-sm font-mono text-neutral-800 dark:text-neutral-100 opacity-50'>{location}</span>
         </div>
       </summary>
-      <div className='mt-4 p-4 bg-neutral-900 rounded-lg'>
+      <div className='mt-4 p-4 bg-neutral-900'>
         {/* Job Description */}
         <p className='text-sm font-mono leading-6'>{description}</p>
       </div>
