@@ -12,7 +12,7 @@
     "test:watch": "jest --watch"
   },
   "dependencies": {
-    "@kalynbeach/wave-player": "^1.0.8",
+    "@kalynbeach/wave-player": "^1.0.9",
     "@react-three/drei": "^9.84.1",
     "@react-three/fiber": "^8.14.2",
     "@types/node": "20.6.2",
