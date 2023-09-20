@@ -2,12 +2,17 @@
 
 ## TODOs
 
-- General
-  - Update project & repo for `kalynbeach.xyz` domain
-- Content
+- **General**
+  - Reorganize `src` directory
+    - Rename `src/app/(info)`?
+    - Move `src/ui` directory into `src/app/`
+      - Eventually refactor these into a UI component library package
+- **Pages**
   - `about` page
     - Add content
-- Testing
+  - `blog` page
+    - Build out blog layout and components
+- **Tests**
   - `ui` components
     - `Header`
       - `MobileNav`
