@@ -1,5 +1,5 @@
-'use client'
+"use client";
 
-import { Canvas } from '@react-three/fiber'
+import { Canvas } from "@react-three/fiber";
 
-export default Canvas
+export default Canvas;

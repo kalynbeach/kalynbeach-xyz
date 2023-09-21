@@ -1,5 +1,5 @@
-import Canvas from '@/ui/Canvas'
-import MusicSphere from './MusicSphere'
+import Canvas from "@/ui/Canvas";
+import MusicSphere from "./MusicSphere";
 
 export default function MusicScene() {
   return (
@@ -8,5 +8,5 @@ export default function MusicScene() {
       <pointLight position={[10, 10, 10]} />
       <MusicSphere />
     </Canvas>
-  )
+  );
 }

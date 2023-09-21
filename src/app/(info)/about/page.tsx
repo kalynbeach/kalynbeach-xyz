@@ -1,38 +1,38 @@
-import Image from 'next/image'
-import PageHeading from '@/ui/PageHeading'
-import UnderConstruction from '@/ui/UnderConstruction'
-import { aboutText } from './content'
-import aboutPic from 'public/about-kb.jpeg'
+import Image from "next/image";
+import PageHeading from "@/ui/PageHeading";
+import UnderConstruction from "@/ui/UnderConstruction";
+import { aboutText } from "./content";
+import aboutPic from "public/about-kb.jpeg";
 
 export const metadata = {
-  title: 'about | kalynbeach',
-  description: 'About Kalyn Beach',
-}
+  title: "about | kalynbeach",
+  description: "About Kalyn Beach",
+};
 
 export default function About() {
-  const contentHidden = true
+  const contentHidden = true;
 
   return (
     <div>
-      <PageHeading emoji='🪬' name='about' />
+      <PageHeading emoji="🪬" name="about" />
       <UnderConstruction />
 
       {/* About Content */}
-      { !contentHidden && (
-        <div className='flex flex-col justify-between gap-4'>
+      {!contentHidden && (
+        <div className="flex flex-col justify-between gap-4">
           {/* Text */}
-          <div className='flex flex-col gap-2 mb-8 md:mb-0'>
-            {
-              aboutText.split('\n\n').map((paragraph, i) => (
-                <p key={i} className=''>{paragraph}</p>
-              ))
-            }
+          <div className="flex flex-col gap-2 mb-8 md:mb-0">
+            {aboutText.split("\n\n").map((paragraph, i) => (
+              <p key={i} className="">
+                {paragraph}
+              </p>
+            ))}
           </div>
           {/* Image(s) */}
-          <div className='md:self-end'>
+          <div className="md:self-end">
             <Image
               src={aboutPic}
-              alt='Let me cook.'
+              alt="Let me cook."
               width={326}
               height={492}
               quality={80}
@@ -40,7 +40,6 @@ export default function About() {
           </div>
         </div>
       )}
-
     </div>
-  )
+  );
 }

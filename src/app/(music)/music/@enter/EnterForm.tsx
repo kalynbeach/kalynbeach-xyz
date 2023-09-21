@@ -1,37 +1,33 @@
-'use client'
+"use client";
 
-import { useState } from 'react'
-import { handleEnterFormInput } from './actions'
+import { useState } from "react";
+import { handleEnterFormInput } from "./actions";
 
 export default function EnterForm() {
-  const [message, setMessage] = useState('')
+  const [message, setMessage] = useState("");
 
   const handleSubmit = async (event: React.FormEvent) => {
-    event.preventDefault()
-    setMessage('')
-    const data = new FormData(event.target as HTMLFormElement)
-    const isVerified = await handleEnterFormInput(data)
+    event.preventDefault();
+    setMessage("");
+    const data = new FormData(event.target as HTMLFormElement);
+    const isVerified = await handleEnterFormInput(data);
     if (!isVerified) {
-      setMessage('incorrect password')
+      setMessage("incorrect password");
     }
-  }
+  };
 
   return (
-    <div className='w-72 h-24 p-4 relative flex flex-col justify-center items-center bg-night-900 border border-neutral-800 rounded'>
+    <div className="w-72 h-24 p-4 relative flex flex-col justify-center items-center bg-night-900 border border-neutral-800 rounded">
       <form onSubmit={handleSubmit}>
         <input
-          name='password'
-          placeholder='password'
-          className='p-1 bg-night-800 border border-neutral-800 rounded focus-visible:outline-none focus-visible:outline-kb-green-dark'
+          name="password"
+          placeholder="password"
+          className="p-1 bg-night-800 border border-neutral-800 rounded focus-visible:outline-none focus-visible:outline-kb-green-dark"
         />
       </form>
-      <div className='absolute bottom-2'>
-        {
-          message && (
-            <p className='text-xs text-kb-green-dark'>{message}</p>
-          )
-        }
+      <div className="absolute bottom-2">
+        {message && <p className="text-xs text-kb-green-dark">{message}</p>}
       </div>
     </div>
-  )
+  );
 }

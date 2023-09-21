@@ -1,5 +1,5 @@
-import Canvas from '@/ui/Canvas'
-import EnterSphere from './EnterSphere'
+import Canvas from "@/ui/Canvas";
+import EnterSphere from "./EnterSphere";
 
 export default function EnterScene() {
   return (
@@ -8,5 +8,5 @@ export default function EnterScene() {
       <pointLight position={[10, 10, 10]} />
       <EnterSphere />
     </Canvas>
-  )
+  );
 }

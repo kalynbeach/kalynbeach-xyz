@@ -1,54 +1,54 @@
-import type { RequestCookie } from 'next/dist/compiled/@edge-runtime/cookies'
-import { NextRequest, NextResponse } from 'next/server'
-import { cookies } from 'next/headers'
+import type { RequestCookie } from "next/dist/compiled/@edge-runtime/cookies";
+import { NextRequest, NextResponse } from "next/server";
+import { cookies } from "next/headers";
 
-const cookieName = process.env.MUSIC_PAGE_COOKIE_NAME
-const cookieValue = process.env.MUSIC_PAGE_COOKIE_VALUE
+const cookieName = process.env.MUSIC_PAGE_COOKIE_NAME;
+const cookieValue = process.env.MUSIC_PAGE_COOKIE_VALUE;
 
 export function checkVerifiedCookie(
   request?: NextRequest,
-  name: string = cookieName!
+  name: string = cookieName!,
 ) {
-  let cookie: RequestCookie | undefined
+  let cookie: RequestCookie | undefined;
 
   if (!request) {
-    cookie = cookies().get(name) 
+    cookie = cookies().get(name);
   } else {
-    cookie = request.cookies.get(name)
+    cookie = request.cookies.get(name);
   }
 
   if (cookie) {
-    return true
+    return true;
   }
 
-  return false
+  return false;
 }
 
 export function setVerifiedCookie(
   response?: NextResponse,
   name: string = cookieName!,
-  value: string = cookieValue!
+  value: string = cookieValue!,
 ) {
   if (response) {
-    response.cookies.set({ name, value, httpOnly: true, path: '/' })
+    response.cookies.set({ name, value, httpOnly: true, path: "/" });
   } else {
-    cookies().set({ name, value, httpOnly: true, path: '/' })
+    cookies().set({ name, value, httpOnly: true, path: "/" });
   }
 }
 
 export function verifyPassword(password: string) {
   if (password === process.env.MUSIC_PAGE_PASSWORD) {
-    setVerifiedCookie()
-    console.log(`[verifyPassword] Verified!`)
-    return true
+    setVerifiedCookie();
+    console.log(`[verifyPassword] Verified!`);
+    return true;
   } else {
-    console.log(`[verifyPassword] Not verified.`)
+    console.log(`[verifyPassword] Not verified.`);
     // TODO: Handle incorrect password
-    return false
+    return false;
   }
 }
 
 export function verify(): boolean {
-  const isVerified = checkVerifiedCookie()
-  return isVerified
+  const isVerified = checkVerifiedCookie();
+  return isVerified;
 }
