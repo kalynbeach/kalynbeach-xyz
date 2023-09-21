@@ -1,3 +1,4 @@
+import MusicScene from './MusicScene'
 import WavePlayerContainer from './WavePlayerContainer'
 
 export const metadata = {
@@ -7,9 +8,13 @@ export const metadata = {
 
 export default function Music() {
   return (
-    <div className=''>
-      {/* <h1 className='font-mono text-3xl'>🚧 🔊 🚧</h1> */}
-      <WavePlayerContainer />
+    <div className='w-full h-screen relative flex justify-center items-center'>
+      <div className='absolute -z-50 w-full h-full'>
+        <MusicScene />
+      </div>
+      <div className='z-50'>
+        <WavePlayerContainer />
+      </div>
     </div>
   )
 }
