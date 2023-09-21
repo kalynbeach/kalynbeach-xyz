@@ -19,7 +19,9 @@ export default function Code() {
         <h2 className='mb-6 text-2xl font-mono text-night-900 dark:text-white tracking-wider'>Projects</h2>
         <div className='grid lg:grid-cols-3 gap-4'>
           {
-            projects.map((project, i) => <Card key={i} {...project} />)
+            projects.map((project, i) => (
+              <Card key={i} {...project} />
+            ))
           }
         </div>
       </section>
