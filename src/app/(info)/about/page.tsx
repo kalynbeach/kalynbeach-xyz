@@ -1,7 +1,7 @@
 import Image from "next/image";
 import PageHeading from "@/ui/PageHeading";
 import UnderConstruction from "@/ui/UnderConstruction";
-import { aboutText } from "./content";
+import { aboutText, loremIpsum } from "./content";
 import aboutPic from "public/about-kb.jpeg";
 
 export const metadata = {
@@ -10,6 +10,7 @@ export const metadata = {
 };
 
 export default function About() {
+  const content = loremIpsum; // TODO: replace with aboutText
   const contentHidden = true;
 
   return (
@@ -22,7 +23,7 @@ export default function About() {
         <div className="flex flex-col justify-between gap-4">
           {/* Text */}
           <div className="flex flex-col gap-2 mb-8 md:mb-0">
-            {aboutText.split("\n\n").map((paragraph, i) => (
+            {content.split("\n\n").map((paragraph, i) => (
               <p key={i} className="">
                 {paragraph}
               </p>

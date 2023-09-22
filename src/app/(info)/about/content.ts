@@ -1,4 +1,4 @@
-export const aboutText = `
+export const loremIpsum = `
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et odio justo. Morbi tempor ligula 
 vel turpis tincidunt, vitae volutpat velit dignissim. Pellentesque habitant morbi tristique 
 senectus et netus et malesuada fames ac turpis egestas. Nam aliquam lorem non venenatis dapibus. 
@@ -16,3 +16,7 @@ non risus consequat cursus id eget lorem. Sed ac magna tristique, lacinia lorem 
 arcu. Fusce nec aliquet risus. Donec malesuada justo quis nulla dignissim, id posuere 
 nulla laoreet.
 `;
+
+export const aboutText = `
+I make music and software.
+`
