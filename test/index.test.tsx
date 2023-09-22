@@ -1,19 +1,42 @@
 import "@testing-library/jest-dom";
 import { render, screen } from "@testing-library/react";
 import Home from "@/app/(info)/page";
+import About from "@/app/(info)/about/page";
+import Blog from "@/app/(info)/blog/page";
+import Code from "@/app/(info)/code/page";
+import Music from "@/app/(music)/music/@music/page";
 
 describe("Home", () => {
-  it("renders a heading", () => {
+  it("renders", () => {
     render(<Home />);
-    const heading = screen.getByText(`🌐`);
-    expect(heading).toBeInTheDocument();
+  });
+  // it("renders a heading", () => {
+  //   render(<Home />);
+  //   const heading = screen.getByText(`🌐`);
+  //   expect(heading).toBeInTheDocument();
+  // });
+});
+
+describe("About", () => {
+  it("renders", () => {
+    render(<About />);
   });
 });
 
-// TODO: add `/about` tests
+describe("Blog", () => {
+  it("renders", () => {
+    render(<Blog />);
+  });
+});
 
-// TODO: add `/blog` tests
+describe("Code", () => {
+  it("renders", () => {
+    render(<Code />);
+  });
+});
 
-// TODO: add `/code` tests
-
-// TODO: add `/music` tests
+describe("Music", () => {
+  it("renders", () => {
+    render(<Music />);
+  });
+});

@@ -8,7 +8,7 @@ export const metadata = {
   description: "Kalyn Beach",
 };
 
-export default function RootLayout({
+export default function MusicLayout({
   enter,
   music,
 }: {
