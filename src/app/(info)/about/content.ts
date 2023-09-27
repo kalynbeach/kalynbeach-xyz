@@ -1,3 +1,5 @@
+import aboutPic from "public/about-kb.jpeg";
+
 export const loremIpsum = `
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et odio justo. Morbi tempor ligula 
 vel turpis tincidunt, vitae volutpat velit dignissim. Pellentesque habitant morbi tristique 
@@ -19,4 +21,6 @@ nulla laoreet.
 
 export const aboutText = `
 I make music and software.
-`
+`;
+
+export const aboutImage = process.env.ABOUT_KB_IMAGE_URL || aboutPic;
