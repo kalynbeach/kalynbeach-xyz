@@ -1,7 +1,7 @@
 import Image from "next/image";
 import PageHeading from "@/ui/PageHeading";
 import UnderConstruction from "@/ui/UnderConstruction";
-import { aboutText, loremIpsum } from "./content";
+import { aboutText, aboutImage, loremIpsum } from "./content";
 import aboutPic from "public/about-kb.jpeg";
 
 export const metadata = {
@@ -11,7 +11,7 @@ export const metadata = {
 
 export default function About() {
   const content = loremIpsum; // TODO: replace with aboutText
-  const contentHidden = true;
+  const contentHidden = false;
 
   return (
     <div>
@@ -32,11 +32,11 @@ export default function About() {
           {/* Image(s) */}
           <div className="md:self-end">
             <Image
-              src={aboutPic}
+              src={aboutImage}
               alt="Let me cook."
               width={326}
               height={492}
-              quality={80}
+              quality={90}
             />
           </div>
         </div>
