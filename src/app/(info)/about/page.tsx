@@ -11,7 +11,7 @@ export const metadata = {
 
 export default function About() {
   const content = loremIpsum; // TODO: replace with aboutText
-  const contentHidden = false;
+  const contentHidden = true;
 
   return (
     <div>
