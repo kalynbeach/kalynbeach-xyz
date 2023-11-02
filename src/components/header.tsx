@@ -1,6 +1,6 @@
 import Link from "next/link";
-import DesktopNav from "./DesktopNav";
-import MobileNav from "./MobileNav";
+import DesktopNav from "./desktop-nav";
+import MobileNav from "./mobile-nav";
 
 export default function Header() {
   return (

@@ -1,5 +1,5 @@
-import PageHeading from "@/ui/PageHeading";
-import UnderConstruction from "@/ui/UnderConstruction";
+import PageHeading from "@/components/page-heading";
+import UnderConstruction from "@/components/under-construction";
 
 export const metadata = {
   title: "blog | kalynbeach",

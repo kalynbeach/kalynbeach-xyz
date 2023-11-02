@@ -2,7 +2,7 @@
 
 import type { PutBlobResult } from "@vercel/blob";
 import { useState, useRef } from "react";
-import PageHeading from "@/ui/PageHeading";
+import PageHeading from "@/components/page-heading";
 
 export default function UploadPage() {
   const inputFileRef = useRef<HTMLInputElement>(null);

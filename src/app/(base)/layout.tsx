@@ -1,7 +1,7 @@
 import { inter, ibm_plex_mono, ibm_plex_sans } from "@/app/fonts";
 import { Analytics } from "@vercel/analytics/react";
-import Header from "@/ui/Header";
-import Footer from "@/ui/Footer";
+import Header from "@/components/header";
+import Footer from "@/components/footer";
 import "../globals.css";
 
 export const metadata = {

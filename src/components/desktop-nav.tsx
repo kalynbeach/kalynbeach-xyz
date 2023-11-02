@@ -1,4 +1,4 @@
-import ActiveLink from "./ActiveLink";
+import ActiveLink from "./active-link";
 
 export default function DesktopNav() {
   return (
