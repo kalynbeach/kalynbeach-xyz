@@ -3,6 +3,7 @@
 import { PropsWithChildren } from "react";
 import { usePathname } from "next/navigation";
 import Link, { LinkProps } from "next/link";
+import { cn } from "@/lib/utils";
 
 type ActiveLinkProps = LinkProps & {};
 
@@ -12,12 +13,17 @@ export default function ActiveLink({
 }: PropsWithChildren<ActiveLinkProps>) {
   const pathName = usePathname();
   const isActive = pathName === props.href;
-  const baseClassName =
-    "text-lg md:text-sm font-mono transition hover:text-kb-green-dark dark:hover:text-kb-green-light";
-  const activeClassName = `${baseClassName} text-kb-green-dark dark:text-kb-green-light`;
 
   return (
-    <Link className={isActive ? activeClassName : baseClassName} {...props}>
+    <Link
+      className={
+        cn(
+          "text-lg md:text-sm font-mono transition hover:text-kb-green-dark dark:hover:text-kb-green-light",
+          isActive && "text-kb-green-dark dark:text-kb-green-light"
+        )
+      }
+      {...props}
+    >
       {children}
     </Link>
   );
