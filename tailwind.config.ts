@@ -83,7 +83,7 @@ export default {
         "accordion-up": "accordion-up 0.2s ease-out",
       },
       fontFamily: {
-        sans: ["var(--font-ibm-plex-sans)", ...fontFamily.sans],
+        sans: ["var(--font-inter)", ...fontFamily.sans],
         mono: ["var(--font-ibm-plex-mono)", ...fontFamily.mono],
         heading: ["var(--font-inter)"],
       },
