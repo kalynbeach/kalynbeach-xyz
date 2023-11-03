@@ -1,5 +1,5 @@
-import Canvas from "@/ui/Canvas";
-import EnterSphere from "./EnterSphere";
+import Canvas from "@/components/canvas";
+import EnterSphere from "./enter-sphere";
 
 export default function EnterScene() {
   return (

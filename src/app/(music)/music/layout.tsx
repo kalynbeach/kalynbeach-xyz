@@ -1,7 +1,7 @@
 import { inter, ibm_plex_mono, ibm_plex_sans } from "@/app/fonts";
 import { Analytics } from "@vercel/analytics/react";
 import { verify } from "@/lib/verification";
-import "@/app/globals.css";
+import "@/styles/globals.css";
 
 export const metadata = {
   title: "kalynbeach",

@@ -1,8 +1,8 @@
 import { projects, jobs } from "./content";
-import UnderConstruction from "@/ui/UnderConstruction";
-import PageHeading from "@/ui/PageHeading";
-import Card from "@/ui/Card";
-import Job from "./Job";
+import UnderConstruction from "@/components/under-construction";
+import PageHeading from "@/components/page-heading";
+import Card from "@/components/card";
+import Job from "./job";
 
 export const metadata = {
   title: "code | kalynbeach",

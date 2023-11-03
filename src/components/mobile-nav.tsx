@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
-import ActiveLink from "./ActiveLink";
+import ActiveLink from "./active-link";
 
 export default function MobileNav() {
   const [isOpen, setIsOpen] = useState(false);

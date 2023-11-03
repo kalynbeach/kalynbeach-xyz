@@ -1,5 +1,5 @@
-import EnterForm from "./EnterForm";
-import EnterScene from "./EnterScene";
+import EnterForm from "./enter-form";
+import EnterScene from "./enter-scene";
 
 export const metadata = {
   title: "enter - music | kalynbeach",

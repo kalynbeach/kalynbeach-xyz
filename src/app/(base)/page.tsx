@@ -1,4 +1,4 @@
-import PageHeading from "@/ui/PageHeading";
+import PageHeading from "@/components/page-heading";
 
 export default function Home() {
   return (
