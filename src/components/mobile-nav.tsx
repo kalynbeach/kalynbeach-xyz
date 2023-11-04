@@ -2,11 +2,13 @@
 
 import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
+import { Button } from "@/components/ui/button";
+import { HamburgerMenuIcon, Cross1Icon } from "@radix-ui/react-icons";
 import ActiveLink from "./active-link";
 
 export default function MobileNav() {
-  const [isOpen, setIsOpen] = useState(false);
   const pathName = usePathname();
+  const [isOpen, setIsOpen] = useState(false);
 
   // Close mobile nav menu when user navigates home
   useEffect(() => {
@@ -21,33 +23,9 @@ export default function MobileNav() {
 
   return (
     <nav className="flex flex-row gap-10 justify-between items-center">
-      <button onClick={toggleMenu}>
-        {isOpen ? (
-          <svg
-            width="32"
-            height="32"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              className="fill-night-900 dark:fill-white"
-              d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"
-            />
-          </svg>
-        ) : (
-          <svg
-            width="32"
-            height="32"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              className="fill-night-900 dark:fill-white"
-              d="M2 6h20v2H2zm0 5h20v2H2zm0 5h20v2H2z"
-            />
-          </svg>
-        )}
-      </button>
+      <Button variant="ghost" size="icon" onClick={toggleMenu}>
+        {isOpen ? <Cross1Icon className="h-4 w-4" /> : <HamburgerMenuIcon className="h-4 w-4" />}
+      </Button>
       <div
         className={`${
           isOpen ? "h-64" : "h-0"
