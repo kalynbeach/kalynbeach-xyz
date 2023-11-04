@@ -1,11 +1,13 @@
 import Image from "next/image";
+import ThemeToggle from "./theme-toggle";
 
-export default function Footer() {
+export default function SiteFooter() {
   const currentYear = new Date().getFullYear();
   return (
     <footer className="w-full h-48 md:h-36 mx-auto my-0 px-8 md:px-4 flex flex-col md:flex-row justify-evenly md:justify-between items-start md:items-center font-mono text-xs">
       <span className="">&copy; Kalyn Beach {currentYear}</span>
-      <div className="flex flex-row gap-12 justify-between items-center">
+      <ThemeToggle />
+      <div className="flex flex-row gap-10 justify-between items-center">
         <a
           className="order-3 md:order-1"
           href="https://github.com/kalynbeach"

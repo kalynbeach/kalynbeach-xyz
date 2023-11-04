@@ -35,7 +35,7 @@ export default function Job({
           </span>
         </div>
       </summary>
-      <div className="mt-4 p-4 bg-neutral-900">
+      <div className="mt-4 p-4 dark:bg-neutral-900">
         {/* Job Description */}
         <p className="text-sm font-mono leading-6">{description}</p>
       </div>
