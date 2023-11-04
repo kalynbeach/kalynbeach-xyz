@@ -46,8 +46,8 @@ export default function MobileNav() {
 
   return (
     <div className="md:hidden flex flex-row gap-10 justify-between items-center">
-      <Button variant="ghost" size="icon" onClick={toggleMenu}>
-        {isOpen ? <Cross1Icon className="h-4 w-4" /> : <HamburgerMenuIcon className="h-4 w-4" />}
+      <Button onClick={toggleMenu} variant="ghost" size="icon" className="h-5 w-5 rounded-none hover:bg-none">
+        {isOpen ? <Cross1Icon className="h-5 w-5" /> : <HamburgerMenuIcon className="h-5 w-5" />}
       </Button>
       <MobileNavMenu isOpen={isOpen} toggleHandler={toggleMenu} />
     </div>
