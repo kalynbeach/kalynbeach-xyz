@@ -1,10 +1,10 @@
-import { inter, ibm_plex_mono, ibm_plex_sans } from "@/app/fonts";
+import { cn } from "@/lib/utils";
+import { GeistSans, GeistMono } from "geist/font";
 import { Analytics } from "@vercel/analytics/react";
 import ThemeProvider from "@/components/theme-provider";
 import SiteHeader from "@/components/site-header";
 import SiteFooter from "@/components/site-footer";
 import "@/styles/globals.css";
-import { cn } from "@/lib/utils";
 
 export const metadata = {
   title: "kalynbeach",
@@ -18,7 +18,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={cn("min-h-screen font-sans antialiased", inter.variable, ibm_plex_mono.variable)}>
+      <body className={cn("min-h-screen font-sans antialiased", GeistSans.variable, GeistMono.variable)}>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
