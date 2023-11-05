@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { handleEnterFormInput } from "./actions";
+import { handleEnterFormInput } from "@/app/(music)/music/actions";
 
 export default function EnterForm() {
   const [message, setMessage] = useState("");

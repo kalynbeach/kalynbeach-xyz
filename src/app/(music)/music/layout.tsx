@@ -1,7 +1,6 @@
 import { cn } from "@/lib/utils";
 import { GeistSans, GeistMono } from "geist/font";
 import { Analytics } from "@vercel/analytics/react";
-import { verify } from "@/lib/verification";
 import ThemeProvider from "@/components/theme-provider";
 import "@/styles/globals.css";
 
@@ -11,14 +10,10 @@ export const metadata = {
 };
 
 export default function MusicLayout({
-  enter,
-  music,
+  children,
 }: {
   children: React.ReactNode;
-  enter: React.ReactNode;
-  music: React.ReactNode;
 }) {
-  const isVerified = verify();
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={cn("min-h-screen font-sans antialiased", GeistSans.variable, GeistMono.variable)}>
@@ -30,7 +25,7 @@ export default function MusicLayout({
         >
           <div className="w-full min-h-screen flex flex-col">
             <main className="min-h-max flex-1 flex flex-col justify-center items-center">
-              {isVerified ? music : enter}
+              {children}
             </main>
           </div>
         </ThemeProvider>
