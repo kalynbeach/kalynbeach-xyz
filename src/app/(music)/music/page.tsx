@@ -12,7 +12,6 @@ export const metadata = {
 
 export default function Music() {
   const isVerified = verify();
-  // console.log(`[music/page] isVerified: ${isVerified}`);
 
   return (
     <div className="w-full h-screen relative flex justify-center items-center">

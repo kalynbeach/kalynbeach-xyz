@@ -1,9 +1,9 @@
 import "@testing-library/jest-dom";
 import { render, screen } from "@testing-library/react";
-import Home from "@/app/(base)/page";
-import About from "@/app/(base)/about/page";
-import Blog from "@/app/(base)/blog/page";
-import Code from "@/app/(base)/code/page";
+import Home from "@/app/(default)/page";
+import About from "@/app/(default)/about/page";
+import Blog from "@/app/(default)/blog/page";
+import Code from "@/app/(default)/code/page";
 import Music from "@/app/(music)/music/@music/page";
 
 describe("Home", () => {
