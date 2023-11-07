@@ -5,11 +5,6 @@ import EnterForm from "@/components/enter-form";
 import MusicSphere from "@/components/music-sphere";
 import WavePlayerContainer from "@/components/wave-player-container";
 
-export const metadata = {
-  title: "music | kalynbeach",
-  description: "Kalyn Beach Music",
-};
-
 export default function Music() {
   const isVerified = verify();
 

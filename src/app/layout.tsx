@@ -1,15 +1,15 @@
+import "@/styles/globals.css";
 import { cn } from "@/lib/utils";
 import { GeistSans, GeistMono } from "geist/font";
 import { Analytics } from "@vercel/analytics/react";
 import ThemeProvider from "@/components/theme-provider";
-import "@/styles/globals.css";
 
 export const metadata = {
   title: {
     template: "%s | kalynbeach",
     default: "kalynbeach",
   },
-  description: "Kalyn Beach",
+  description: "Kalyn Beach + the internet",
   metadataBase: new URL("https://kalynbeach.xyz"),
 };
 
@@ -20,7 +20,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={cn("min-h-screen font-sans antialiased", GeistSans.variable, GeistMono.variable)}>
+      <body className={cn(GeistSans.variable, GeistMono.variable, "min-h-screen font-sans antialiased")}>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
