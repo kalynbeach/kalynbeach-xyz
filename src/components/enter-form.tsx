@@ -4,7 +4,7 @@ import { useFormState } from "react-dom";
 import { verifyPassword } from "@/lib/actions";
 
 export default function EnterForm() {
-  const initialState = { message: null, errors: {} };
+  const initialState = { message: "", errors: {} };
   const [state, dispatch] = useFormState(verifyPassword, initialState);
 
   return (

@@ -7,6 +7,8 @@ const PasswordSchema = z.object({
   password: z.string(),
 });
 
+// const VerifyPassword = PasswordSchema.omit({});
+
 // This is temporary until @types/react-dom is updated
 export type State = {
   errors?: {
