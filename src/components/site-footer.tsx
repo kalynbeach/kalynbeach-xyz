@@ -8,7 +8,7 @@ export default function SiteFooter() {
 
       {/* Copyright */}
       <div className="order-3 md:order-1 md:basis-1/3">
-        <span className="font-sans text-xs">&copy; Kalyn Beach {currentYear}</span>
+        <span className="font-mono text-xs">&copy; Kalyn Beach {currentYear}</span>
       </div>
 
       {/* Desktop ThemeToggle */}

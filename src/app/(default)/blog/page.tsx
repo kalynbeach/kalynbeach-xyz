@@ -2,7 +2,7 @@ import PageHeading from "@/components/page-heading";
 import UnderConstruction from "@/components/under-construction";
 
 export const metadata = {
-  title: "blog | kalynbeach",
+  title: "blog",
   description: `Kalyn Beach's blog`,
 };
 

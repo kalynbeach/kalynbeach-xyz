@@ -5,7 +5,7 @@ import { aboutText, aboutImage, loremIpsum } from "./content";
 import aboutPic from "public/about-kb.jpeg";
 
 export const metadata = {
-  title: "about | kalynbeach",
+  title: "about",
   description: "About Kalyn Beach",
 };
 

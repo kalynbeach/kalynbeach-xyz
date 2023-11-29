@@ -5,7 +5,7 @@ import Card from "@/components/card";
 import Job from "./job";
 
 export const metadata = {
-  title: "code | kalynbeach",
+  title: "code",
   description: "Kalyn Beach Code",
 };
 

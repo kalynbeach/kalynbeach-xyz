@@ -4,7 +4,7 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "uawmx9axdaxaqhm1.public.blob.vercel-storage.com"
+        hostname: "kkb-sounds.s3.us-west-1.amazonaws.com"
       }
     ],
   },

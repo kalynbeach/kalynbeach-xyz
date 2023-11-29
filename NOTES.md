@@ -2,11 +2,6 @@
 
 ## TODOs
 
-- **General**
-  - Reorganize `src` directory
-    - Rename `src/app/(info)`?
-    - Move `src/ui` directory into `src/app/`
-      - Eventually refactor these into a UI component library package
 - **Pages**
   - `about` page
     - Add content
@@ -23,3 +18,19 @@
       - `EnterForm`
       - `EnterScene`
   - `code` route (content & components)
+
+## Refactor: Music Routes & Pages
+
+### Music Pages
+
+- `/music` (new "intro/portal" page) -> `EnterButton`
+  - `/music/enter` -> `EnterScene`, `EnterForm`
+  - `/music/init`-> `MusicScene`, `WavePlayerStack`
+
+### Music Routes Flow
+
+1. Navigate to `/music` page
+2. Click `EnterButton` -> navigate to `/music/enter` page
+3. Submit password into `EnterForm`
+4. Verify submitted password
+5. If password is correct, navigate to `/music/init` page

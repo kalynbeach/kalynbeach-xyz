@@ -23,4 +23,5 @@ export const aboutText = `
 I make music and software.
 `;
 
-export const aboutImage = process.env.ABOUT_KB_IMAGE_URL || aboutPic;
+// export const aboutImage = process.env.ABOUT_KB_IMAGE_URL || aboutPic;
+export const aboutImage = aboutPic;
