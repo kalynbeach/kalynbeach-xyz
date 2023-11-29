@@ -14,6 +14,7 @@ export default function EnterForm() {
           name="password"
           placeholder="password"
           aria-describedby="password-error"
+          autoComplete="off"
           className="p-1 bg-night-800 border border-neutral-800 focus-visible:outline-none focus-visible:outline-kb-green-dark"
         />
       </form>
