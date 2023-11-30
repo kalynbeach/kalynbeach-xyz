@@ -3,6 +3,7 @@ import UnderConstruction from "@/components/under-construction";
 import PageHeading from "@/components/page-heading";
 import Card from "@/components/card";
 import Job from "./job";
+import ProjectCard from "./project-card";
 
 export const metadata = {
   title: "code",
@@ -16,19 +17,24 @@ export default function Code() {
 
       {/* Projects */}
       <section className="mb-16">
-        <h2 className="mb-6 text-2xl font-mono text-night-900 dark:text-white tracking-wider">
+        <h2 className="mb-6 text-2xl font-bold text-night-900 dark:text-white tracking-wider">
           Projects
         </h2>
         <div className="grid lg:grid-cols-3 gap-4">
           {projects.map((project, i) => (
-            <Card key={i} {...project} />
+            <ProjectCard key={i} {...project} />
           ))}
         </div>
+        {/* <div className="mt-6 grid lg:grid-cols-3 gap-4">
+          {projects.map((project, i) => (
+            <Card key={i} {...project} />
+          ))}
+        </div> */}
       </section>
 
       {/* Work (Experience) */}
       <section className="mb-16">
-        <h2 className="mb-6 text-2xl font-mono text-night-900 dark:text-white tracking-wider">
+        <h2 className="mb-6 text-2xl font-bold text-night-900 dark:text-white tracking-wider">
           Work
         </h2>
         <div className="flex flex-col gap-6">

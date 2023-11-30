@@ -1,30 +1,74 @@
-export const projects = [
+export type CodeProject = {
+  title: string;
+  description: string;
+  emoji: string;
+  repoUrl: string;
+  url: string;
+  tags: string[];
+};
+
+export const projects: CodeProject[] = [
   {
     title: "kalynbeach-xyz",
-    description: "🌐 This site",
-    href: "https://github.com/kalynbeach/kalynbeach-xyz",
-  },
-  {
-    title: "wave-player",
-    description: "🎵 A music player",
-    href: "https://github.com/kalynbeach/wave-player",
+    description: "This site",
+    emoji: "🌐",
+    repoUrl: "https://github.com/kalynbeach/kalynbeach-xyz",
+    url: "https://kalynbeach.xyz",
+    tags: ["typescript", "react", "nextjs", "tailwindcss"],
   },
   {
     title: "wave-visions",
-    description: "🔊 Audio visualization experiments",
-    href: "https://github.com/kalynbeach/wave-visions",
+    description: "Audio visualizations",
+    emoji: "🔊",
+    repoUrl: "https://github.com/kalynbeach/wave-visions",
+    url: "https://wave-visions.vercel.app",
+    tags: ["typescript", "react", "nextjs", "tailwindcss"],
+  },
+  {
+    title: "wave-player",
+    description: "A music player",
+    emoji: "🎵",
+    repoUrl: "https://github.com/kalynbeach/wave-player",
+    url: "https://github.com/kalynbeach/wave-player",
+    tags: ["typescript", "react", "nextjs", "tailwindcss"],
   },
   {
     title: "wave-dex",
-    description: "🗂️ Music project and library indexer",
-    href: "https://github.com/kalynbeach/wave-dex",
-  },
-  {
-    title: "ai-sdk-experiments",
-    description: "🤖 AI experiments & learning",
-    href: "https://github.com/kalynbeach/ai-sdk-experiments",
+    description: "A music project and library manager",
+    emoji: "🗂️",
+    repoUrl: "https://github.com/kalynbeach/wave-visions",
+    url: "https://wave-dex.vercel.app",
+    tags: ["typescript", "react", "nextjs", "tailwindcss"],
   },
 ];
+
+// export const projects = [
+//   {
+//     title: "kalynbeach-xyz",
+//     description: "🌐 This site",
+//     href: "https://github.com/kalynbeach/kalynbeach-xyz",
+//   },
+//   {
+//     title: "wave-player",
+//     description: "🎵 A music player",
+//     href: "https://github.com/kalynbeach/wave-player",
+//   },
+//   {
+//     title: "wave-visions",
+//     description: "🔊 Audio visualizations",
+//     href: "https://github.com/kalynbeach/wave-visions",
+//   },
+//   {
+//     title: "wave-dex",
+//     description: "🗂️ Music project and library indexer",
+//     href: "https://github.com/kalynbeach/wave-dex",
+//   },
+//   {
+//     title: "ai-sdk-experiments",
+//     description: "🤖 AI experiments",
+//     href: "https://github.com/kalynbeach/ai-sdk-experiments",
+//   },
+// ];
 
 export const jobs = [
   {

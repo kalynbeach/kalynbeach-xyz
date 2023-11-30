@@ -5,7 +5,7 @@ type PageHeadingProps = {
 
 export default function PageHeading({ emoji, name }: PageHeadingProps) {
   return (
-    <div className="mb-24 flex flex-row justify-between items-center text-3xl font-mono">
+    <div className="mb-24 flex flex-row justify-between items-center text-3xl">
       <span className="">{emoji}</span>
       <h1 className="tracking-wide">{name}</h1>
     </div>
