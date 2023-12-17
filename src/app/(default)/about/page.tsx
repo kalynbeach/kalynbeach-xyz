@@ -9,32 +9,32 @@ export const metadata = {
 };
 
 export default function About() {
-  const content = loremIpsum; // TODO: replace with aboutText
-  const contentHidden = true;
+  const content = aboutText; // TODO: replace with aboutText
+  const contentHidden = false;
 
   return (
     <div>
       <PageHeading emoji="🪬" name="about" />
-      <UnderConstruction />
+      {/* <UnderConstruction /> */}
 
       {/* About Content */}
       {!contentHidden && (
-        <div className="flex flex-col justify-between gap-4">
+        <div className="flex flex-col justify-between gap-24">
           {/* Text */}
-          <div className="flex flex-col gap-2 mb-8 md:mb-0">
-            {content.split("\n\n").map((paragraph, i) => (
+          <div className="flex flex-col justify-between gap-2 mb-8 md:mb-0">
+            {content.split("\n").map((paragraph, i) => (
               <p key={i} className="">
                 {paragraph}
               </p>
             ))}
           </div>
           {/* Image(s) */}
-          <div className="md:self-end">
+          <div className="">
             <Image
               src={"/kb_mirror.png"}
               alt="Let me cook."
-              width={326}
-              height={492}
+              width={163}
+              height={246}
               quality={90}
             />
           </div>
