@@ -1,8 +1,7 @@
 import Image from "next/image";
 import PageHeading from "@/components/page-heading";
 import UnderConstruction from "@/components/under-construction";
-import { aboutText, aboutImage, loremIpsum } from "./content";
-import aboutPic from "public/about-kb.jpeg";
+import { aboutText, loremIpsum } from "./content";
 
 export const metadata = {
   title: "about",
@@ -32,7 +31,7 @@ export default function About() {
           {/* Image(s) */}
           <div className="md:self-end">
             <Image
-              src={aboutImage}
+              src={"/kb_mirror.png"}
               alt="Let me cook."
               width={326}
               height={492}

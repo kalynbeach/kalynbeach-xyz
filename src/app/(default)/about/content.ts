@@ -1,4 +1,4 @@
-import aboutPic from "public/about-kb.jpeg";
+// import aboutPic from "/kb_mirror.png";
 
 export const loremIpsum = `
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et odio justo. Morbi tempor ligula 
@@ -20,8 +20,11 @@ nulla laoreet.
 `;
 
 export const aboutText = `
-I make music and software.
+I love creating, learning, resonating.
+I mainly make music and software.
+
+This space is a work in progress.
 `;
 
 // export const aboutImage = process.env.ABOUT_KB_IMAGE_URL || aboutPic;
-export const aboutImage = aboutPic;
+// export const aboutImage = aboutPic;
