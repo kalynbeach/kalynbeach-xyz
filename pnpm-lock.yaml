@@ -41,6 +41,9 @@ dependencies:
   '@vercel/blob':
     specifier: ^0.16.1
     version: 0.16.1
+  '@vercel/speed-insights':
+    specifier: ^1.0.2
+    version: 1.0.2
   autoprefixer:
     specifier: 10.4.16
     version: 10.4.16(postcss@8.4.32)
@@ -2088,6 +2091,11 @@ packages:
     engines: {node: '>=16.14'}
     dependencies:
       undici: 5.28.2
+    dev: false
+
+  /@vercel/speed-insights@1.0.2:
+    resolution: {integrity: sha512-y5HWeB6RmlyVYxJAMrjiDEz8qAIy2cit0fhBq+MD78WaUwQvuBnQlX4+5MuwVTWi46bV3klaRMq83u9zUy1KOg==}
+    requiresBuild: true
     dev: false
 
   /abab@2.0.6:
