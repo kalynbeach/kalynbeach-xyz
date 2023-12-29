@@ -19,13 +19,9 @@ arcu. Fusce nec aliquet risus. Donec malesuada justo quis nulla dignissim, id po
 nulla laoreet.`;
 
 export const aboutText = 
-`I love creating, learning, resonating.
-I make music and build software.
-I appreciate you.
+`learning, creating, resonating.
 
-
-
-[ this space is a work in progress ]`;
+reading, writing, building.`;
 
 // export const aboutImage = process.env.ABOUT_KB_IMAGE_URL || aboutPic;
 // export const aboutImage = aboutPic;

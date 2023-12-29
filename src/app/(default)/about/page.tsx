@@ -9,13 +9,13 @@ export const metadata = {
 };
 
 export default function About() {
-  const content = aboutText; // TODO: replace with aboutText
-  const contentHidden = false;
+  const content = aboutText;
+  const contentHidden = true;
 
   return (
     <div>
       <PageHeading emoji="🪬" name="about" />
-      {/* <UnderConstruction /> */}
+      <UnderConstruction />
 
       {/* About Content */}
       {!contentHidden && (
