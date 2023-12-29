@@ -1,4 +1,5 @@
 export type CodeProject = {
+  type: "app" | "site" | "tool" | "library";
   title: string;
   description: string;
   emoji: string;
@@ -9,32 +10,36 @@ export type CodeProject = {
 
 export const projects: CodeProject[] = [
   {
+    type: "site",
     title: "kalynbeach-xyz",
-    description: "This site",
+    description: "this site",
     emoji: "🌐",
     repoUrl: "https://github.com/kalynbeach/kalynbeach-xyz",
     url: "https://kalynbeach.xyz",
     tags: ["typescript", "react", "nextjs", "tailwindcss"],
   },
   {
+    type: "app",
     title: "wave-visions",
-    description: "Audio visualizations",
+    description: "audio visualizations",
     emoji: "🔊",
     repoUrl: "https://github.com/kalynbeach/wave-visions",
     url: "https://wave-visions.vercel.app",
     tags: ["typescript", "react", "nextjs", "tailwindcss"],
   },
   {
+    type: "app",
     title: "wave-player",
-    description: "A music player",
+    description: "a music player",
     emoji: "🎵",
     repoUrl: "https://github.com/kalynbeach/wave-player",
     url: "https://github.com/kalynbeach/wave-player",
     tags: ["typescript", "react", "nextjs", "tailwindcss"],
   },
   {
+    type: "app",
     title: "wave-dex",
-    description: "A music project and library manager",
+    description: "a music project and library manager",
     emoji: "🗂️",
     repoUrl: "https://github.com/kalynbeach/wave-visions",
     url: "https://wave-dex.vercel.app",
@@ -73,11 +78,12 @@ export const projects: CodeProject[] = [
 export const jobs = [
   {
     title: "Senior Software Engineer",
-    company: "World of Good Brands (fka Leaf Group)",
+    company: "World of Good Brands",
     location: "Los Angeles, CA",
     startDate: "July 2022",
     endDate: "Present",
     description: `Building and maintaining numerous content-focused sites, web apps and in-house tools while listening, learning, and leading as needed. Supporting my team however I can - from implementing ad-hoc feature requests to sharing my experience and helping younger engineers. Continuing to grow my sense of the work and the field at a higher level (team, products, business, industries) and at a lower level (theory, patterns, modern libraries & frameworks).`,
+    note: "(fka Leaf Group)"
   },
   {
     title: "Software Engineer",
@@ -89,11 +95,12 @@ export const jobs = [
   },
   {
     title: "Associate Software Engineer",
-    company: "Leaf Group (fka Demand Media)",
+    company: "Leaf Group",
     location: "Santa Monica, CA",
     startDate: "September 2015",
     endDate: "September 2016",
     description: `Helped build the React frontend for Leaf Group's internal CMS platform, Content Lab, which is still in use today. Gained foundational experience implemementing designs, building component-based UIs, and learning about web application architecture.`,
+    note: "(fka Demand Media)"
   },
   {
     title: "Software Engineer Intern",

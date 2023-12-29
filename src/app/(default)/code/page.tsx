@@ -2,7 +2,7 @@ import { projects, jobs } from "./content";
 import UnderConstruction from "@/components/under-construction";
 import PageHeading from "@/components/page-heading";
 import Card from "@/components/card";
-import Job from "./job";
+import JobCard from "./job-card";
 import ProjectCard from "./project-card";
 
 export const metadata = {
@@ -25,11 +25,6 @@ export default function Code() {
             <ProjectCard key={i} {...project} />
           ))}
         </div>
-        {/* <div className="mt-6 grid lg:grid-cols-3 gap-4">
-          {projects.map((project, i) => (
-            <Card key={i} {...project} />
-          ))}
-        </div> */}
       </section>
 
       {/* Work (Experience) */}
@@ -39,12 +34,13 @@ export default function Code() {
         </h2>
         <div className="flex flex-col gap-6">
           {jobs.map((job, i) => (
-            <Job key={i} {...job} />
+            <JobCard key={i} {...job} />
           ))}
         </div>
       </section>
 
-      <UnderConstruction />
+      {/* <UnderConstruction /> */}
+
       {/* Links */}
       {/* - Resume (PDF) */}
       {/* <section className='mb-8'>
