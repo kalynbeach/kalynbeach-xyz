@@ -4,7 +4,7 @@ import MusicCanvas from "@/components/music-canvas";
 import EnterSphere from "@/components/enter-sphere";
 import EnterForm from "@/components/enter-form";
 import MusicSphere from "@/components/music-sphere";
-import WavePlayerContainer from "@/components/wave-player-container";
+// import WavePlayerContainer from "@/components/wave-player-container";
 
 export default async function Music() {
   const isVerified = verify();
@@ -16,13 +16,15 @@ export default async function Music() {
         <Suspense fallback={<div></div>}>
           <MusicCanvas>
             {isVerified ? <MusicSphere /> : <EnterSphere />}
+            {/* {isVerified ? <MusicSphere /> : <EnterSphere />} */}
           </MusicCanvas>
         </Suspense>
       </div>
       {/* Page Content */}
       <div className="z-50">
         <Suspense fallback={<div></div>}>
-          {isVerified ? <WavePlayerContainer /> : <EnterForm />}
+          {isVerified ? null : <EnterForm />}
+          {/* {isVerified ? <WavePlayerContainer /> : <EnterForm />} */}
         </Suspense>
       </div>
     </div>
