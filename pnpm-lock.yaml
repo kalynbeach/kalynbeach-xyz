@@ -5,9 +5,6 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
-  '@kalynbeach/wave-player':
-    specifier: ^1.0.9
-    version: 1.0.9(react-dom@18.2.0)(react@18.2.0)
   '@radix-ui/react-dropdown-menu':
     specifier: ^2.0.6
     version: 2.0.6(@types/react-dom@18.2.18)(@types/react@18.2.48)(react-dom@18.2.0)(react@18.2.0)
@@ -1207,16 +1204,6 @@ packages:
     dependencies:
       '@jridgewell/resolve-uri': 3.1.1
       '@jridgewell/sourcemap-codec': 1.4.15
-
-  /@kalynbeach/wave-player@1.0.9(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-inTn8ASi0B4Ms8nzi1FCcu93ESf8pVPFxMl2/waB4PnICw+5BRRw47X+IsMwL0rImn2XBD/DfnOpdo4Je7hPdg==, tarball: https://npm.pkg.github.com/download/@kalynbeach/wave-player/1.0.9/5b2fbb48c41c5d60844a50bb957eefc8cae10ba5}
-    peerDependencies:
-      react: ^18.2.0
-      react-dom: ^18.2.0
-    dependencies:
-      react: 18.2.0
-      react-dom: 18.2.0(react@18.2.0)
-    dev: false
 
   /@mediapipe/tasks-vision@0.10.8:
     resolution: {integrity: sha512-Rp7ll8BHrKB3wXaRFKhrltwZl1CiXGdibPxuWXvqGnKTnv8fqa/nvftYNuSbf+pbJWKYCXdBtYTITdAUTGGh0Q==}

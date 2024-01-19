@@ -1,7 +1,7 @@
 "use client";
 
 // import { StackProvider, WavePlayerStack } from "@kalynbeach/wave-player";
-import { tracks } from "@/app/(music)/music/content";
+// import { tracks } from "@/app/(music)/music/content";
 
 export default function WavePlayerContainer() {
   return (
