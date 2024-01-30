@@ -28,7 +28,7 @@ export default function SiteFooter() {
               height={17}
             />
           </a>
-          <a className="order-2" href="https://discordapp.com/channels/@me/kalynbeach/" target="_blank">
+          <a className="order-2" href="https://discordapp.com/channels/@me/kb_sound/" target="_blank">
             <Image
               className="invert dark:invert-0"
               src="/discord.svg"

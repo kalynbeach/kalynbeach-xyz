@@ -3,7 +3,7 @@ import { verify } from "@/lib/verification";
 import MusicCanvas from "@/components/music-canvas";
 import EnterSphere from "@/components/enter-sphere";
 import EnterForm from "@/components/enter-form";
-import MusicSphere from "@/components/music-sphere";
+// import MusicSphere from "@/components/music-sphere";
 // import WavePlayerContainer from "@/components/wave-player-container";
 
 export default function Music() {
