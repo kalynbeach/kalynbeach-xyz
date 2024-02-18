@@ -2,6 +2,7 @@ import { projects, jobs } from "./content";
 import PageHeading from "@/components/page-heading";
 import JobCard from "./job-card";
 import ProjectCard from "./project-card";
+import GitHubRepos from "./github-repos";
 
 export const metadata = {
   title: "code",
@@ -18,11 +19,12 @@ export default function Code() {
         <h2 className="mb-6 text-2xl font-bold text-night-900 dark:text-white tracking-wider">
           Projects
         </h2>
-        <div className="grid lg:grid-cols-3 gap-4">
+        {/* <div className="grid lg:grid-cols-3 gap-4">
           {projects.map((project) => (
             <ProjectCard key={project.title} {...project} />
           ))}
-        </div>
+        </div> */}
+        <GitHubRepos username="kalynbeach" />
       </section>
 
       {/* Work (Experience) */}
