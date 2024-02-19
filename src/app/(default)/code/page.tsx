@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import { projects, jobs } from "./content";
 import PageHeading from "@/components/page-heading";
 import JobCard from "./job-card";
@@ -9,7 +10,7 @@ export const metadata = {
   description: "Kalyn Beach Code",
 };
 
-export default function Code() {
+export default async function Code() {
   return (
     <div>
       <PageHeading emoji="💻" name="code" />
@@ -24,7 +25,9 @@ export default function Code() {
             <ProjectCard key={project.title} {...project} />
           ))}
         </div> */}
-        <GitHubRepos username="kalynbeach" />
+        <Suspense fallback={<div>Loading projects...</div>}>
+          <GitHubRepos username="kalynbeach" />
+        </Suspense>
       </section>
 
       {/* Work (Experience) */}

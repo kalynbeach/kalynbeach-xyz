@@ -13,7 +13,7 @@ import { Button } from "@/components/ui/button";
 export default function GitHubRepoCard({ repo }: { repo: GitHubRepo }) {
   return (
     <div className="github-repo-card">
-      <Card className="min-h-40 bg-background rounded-none">
+      <Card className="bg-background rounded-none">
         <CardHeader className="">
           <CardTitle className="">
             <a
@@ -25,12 +25,14 @@ export default function GitHubRepoCard({ repo }: { repo: GitHubRepo }) {
             </a>
           </CardTitle>
         </CardHeader>
-        <CardContent className="">
+        <CardContent className="min-h-16">
           <p className="text-sm">{repo.description}</p>
         </CardContent>
         <CardFooter className="gap-3 justify-end">
+          {repo.homepage && (
+            <CardButton href={repo.homepage}>prod</CardButton>
+          )}
           <CardButton href={repo.url}>repo</CardButton>
-          <CardButton href={repo.homepage}>prod</CardButton>
         </CardFooter>
       </Card>
     </div>
@@ -47,7 +49,7 @@ function CardButton({ href, children }: { href: string; children: React.ReactNod
       <Button
         size="sm"
         variant="outline"
-        className="text-sm font-mono font-bold rounded-none transition hover:bg-neutral-900/30 hover:text-kb-green-light"
+        className="text-xs font-mono font-bold rounded-none transition hover:bg-neutral-900/30 hover:text-kb-green-light"
       >
         {children}
       </Button>
