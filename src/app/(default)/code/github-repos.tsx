@@ -17,9 +17,9 @@ export interface GitHubRepo {
   homepage: string;
   language: string;
   stars: number;
-  createdAt: string;
-  pushedAt: string;
-  updatedAt: string;
+  createdAt: Date;
+  pushedAt: Date;
+  updatedAt: Date;
   tags: string[];
 };
 
@@ -29,7 +29,6 @@ async function fetchGitHubRepos(
   sort: "created" | "pushed" | "updated" = "updated"
 ) {
   const url = `https://api.github.com/users/${username}/repos?sort=${sort}&per_page=${count}`;
-  console.log(`[fetchGitHubRepos] url: ${url}`);
   const res = await fetch(url);
   if (!res.ok) {
     throw new Error("Failed to fetch GitHub repos");
@@ -53,6 +52,9 @@ async function fetchGitHubRepos(
       tags: repo.topics,
     });
   }
+  repos.sort((a, b) => {
+    return new Date(b.pushedAt).getTime() - new Date(a.pushedAt).getTime();
+  });
   return repos;
 }
 

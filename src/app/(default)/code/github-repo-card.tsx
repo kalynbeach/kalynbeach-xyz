@@ -14,10 +14,10 @@ export default function GitHubRepoCard({ repo }: { repo: GitHubRepo }) {
   return (
     <div className="github-repo-card">
       <Card className="min-h-40 bg-background rounded-none">
-        <CardHeader className="p-4">
+        <CardHeader className="">
           <CardTitle className="">
             <a
-              className="text-lg font-mono hover:text-kb-green-light transition"
+              className="text-lg font-mono font-bold hover:text-kb-green-light transition"
               href={repo.url}
               target="_blank"
             >
@@ -28,19 +28,29 @@ export default function GitHubRepoCard({ repo }: { repo: GitHubRepo }) {
         <CardContent className="">
           <p className="text-sm">{repo.description}</p>
         </CardContent>
-        <CardFooter className="">
-          <div className="flex flex-col gap-3 justify-between">
-            <div className="flex flex-row gap-2 justify-between">
-              <span className="text-xs">{repo.language}</span>
-              <span className="text-xs">{repo.stars} stars</span>
-            </div>
-            <div className="flex flex-row gap-2 justify-between">
-              <span className="text-xs">created: {repo.createdAt}</span>
-              <span className="text-xs">updated: {repo.updatedAt}</span>
-            </div>
-          </div>
+        <CardFooter className="gap-3 justify-end">
+          <CardButton href={repo.url}>repo</CardButton>
+          <CardButton href={repo.homepage}>prod</CardButton>
         </CardFooter>
       </Card>
     </div>
+  );
+}
+
+function CardButton({ href, children }: { href: string; children: React.ReactNode }) {
+  return (
+    <a
+      href={href}
+      target="_blank"
+      className="text-sm font-mono hover:text-kb-green-light"
+    >
+      <Button
+        size="sm"
+        variant="outline"
+        className="text-sm font-mono font-bold rounded-none transition hover:bg-neutral-900/30 hover:text-kb-green-light"
+      >
+        {children}
+      </Button>
+    </a>
   );
 }
